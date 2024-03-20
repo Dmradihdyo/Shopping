@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  padding: 0 15px;
+  min-height: 100vh;
+  justify-content: center;
+  background: #f0f2f5;
+}
+
+.facebook-page {
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.facebook-page .text {
+  margin-bottom: 90px;
+}
+
+.facebook-page h1 {
+  color: #0f5fc7;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.facebook-page p {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: #1333;
+  border-radius: 8px;
+  box-shadow: 6px 0.25rem 1.25rem rgba(9, 9, 9, 0.2);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+form input {
+  height: 55px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  padding: 0 14px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #1877f2;
+}
+
+::placeholder {
+  color: #777;
+  font-size: 1.063rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+.link .login {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #0e5bc0;
+  padding: 15px 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.link .login:hover {
+  background: #0c4691;
+}
+
+.login:active {
+  transform: scale(0.98);
+}
+
+.login a {
+  text-decoration: none;
+  color: white;
+}
+
+form a {
+  text-decoration: none;
+}
+
+.link .forgot {
+  color: #1f5498;
+  font-size: 0.875rem;
+}
+
+.link .forgot:hover {
+  text-decoration: underline;
+}
+
+hr {
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.page {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.button a {
+  padding: 10px 10px;
+  color: #1f5498;
+  font-size: 0.9rem;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.button a:hover {
+  text-decoration: underline;
+}
+
+@media (max-widht: 768px) {
+  .facebook-page {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .facebook-page .text {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-widht: 768px) {
+  .facebook-page h1 {
+    font-size: 3rem;
+  }
+
+  .facebook-page p {
+    font-size: 1rem;
+  }
+
+  form {
+    padding: 15px;
+  }
+}
