@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dmradhdyo</title>
+    <link href="shopping.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="logo.png" style="width: 70px; height: auto" alt="" />
+          </span>
+
+          <div class="text logo-text">
+            <span class="name" style="font-size: 1.5rem">Profil</span>
+            <span class="profession" style="font-size: 0.9rem">Login</span>
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle">
+          <img
+            src="logout (1).png"
+            style="width: 20px; height: auto; margin-right: 2px"
+          />
+        </i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <span
+              ><img
+                src="search.png"
+                style="width: 20px; height: auto; margin-left: 20px"
+            /></span>
+            <input
+              type="text"
+              style="margin-left: 20px"
+              placeholder="Tap to Search..."
+            />
+          </li>
+
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="home.html">
+                <span
+                  ><img
+                    src="home.png"
+                    style="
+                      width: 20px;
+                      height: auto;
+                      margin-left: 20px;
+                      margin-top: 5px;
+                    "
+                /></span>
+                <span class="text nav-text" style="margin-left: 20px"
+                  >Home</span
+                >
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#">
+                <span
+                  ><img
+                    src="online-shopping.png"
+                    style="
+                      width: 20px;
+                      height: auto;
+                      margin-left: 20px;
+                      margin-top: 5px;
+                    "
+                /></span>
+                <span class="text nav-text" style="margin-left: 20px"
+                  >Shop</span
+                >
+              </a>
+            </li>
+
+            <li
+              class="nav-link"
+              onclick="document.getElementById('id01').style.display='block'"
+              style="width: auto"
+            >
+              <a href="#">
+                <span
+                  ><img
+                    src="shopping-cart.png"
+                    style="
+                      width: 20px;
+                      height: auto;
+                      margin-left: 20px;
+                      margin-top: 5px;
+                    "
+                /></span>
+                <span class="text nav-text" style="margin-left: 20px"
+                  >Keranjang</span
+                >
+              </a>
+            </li>
+
+
+            <li class="nav-link">
+              <a href="404.html">
+                <span
+                  ><img
+                    src="info.png"
+                    style="
+                      width: 20px;
+                      height: auto;
+                      margin-left: 20px;
+                      margin-top: 5px;
+                    "
+                /></span>
+                <span class="text nav-text" style="margin-left: 20px"
+                  >Info</span
+                >
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="404.html">
+                <span
+                  ><img
+                    src="settings.png"
+                    style="
+                      width: 20px;
+                      height: auto;
+                      margin-left: 20px;
+                      margin-top: 5px;
+                    "
+                /></span>
+                <span class="text nav-text" style="margin-left: 20px"
+                  >Setting</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content" style="margin-top: 25px">
+          <li class="">
+            <a href="login.html">
+              <span
+                ><img
+                  src="logout.png"
+                  style="
+                    width: 20px;
+                    height: auto;
+                    margin-left: 20px;
+                    margin-top: 5px;
+                  "
+              /></span>
+              <span class="text nav-text" style="margin-left: 20px"
+                >Logout</span
+              >
+            </a>
+          </li>
+
+          <li class="mode">
+            <div class="sun-moon">
+              <i class="bx bx-moon icon moon">
+                <img
+                  src="sun.png"
+                  style="width: 20px; height: auto; margin-right: 10px"
+                />
+              </i>
+              <i class="bx bx-sun icon sun">
+                <img
+                  src="brightness.png"
+                  style="width: 20px; height: auto; margin-right: 10px"
+                />
+              </i>
+            </div>
+            <span class="mode-text text"> Dark mode</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="text" style="font-size: 1.6rem; color: #ccc">Toko</div>
+      <hr style="height: 3px; background-color: #ffffff; width: 100%" />
+
+      <div class="container">
+        <!--produk 1-->
+        <div class="custom-card">
+          <div class="img-box">
+            <img style="width: 300px; height: auto" src="T-shirt.jpeg" />
+          </div>
+          <div class="custom-content">
+            <h2>T-shirt</h2>
+            <p>Stussy x Nike T-Unisex</p>
+            <p style="color: #989696">White</p>
+            <p style="color: #989696">$19</p>
+            <a href="#" onclick="document.getElementById('ya').style.display='block'">add to</a>
+          </div>
+        </div>
+        <!-- produk 2-->
+        <div class="custom-card">
+          <div class="img-box">
+            <img style="width: 300px; height: auto" src="jaket.jpeg" />
+          </div>
+          <div class="custom-content">
+            <h2>Jacket</h2>
+            <p>Stussy x Nike Unisex Jacket</p>
+            <p style="color: #989696">Black</p>
+            <p style="color: #989696">$40</p>
+            <a
+              href="#"
+              onclick="document.getElementById('ha').style.display='block'"
+              >add to</a
+            >
+          </div>
+        </div>
+        <!-- produk 3 -->
+        <div class="custom-card">
+          <div class="img-box">
+            <img style="width: 300px; height: auto" src="celana.jpeg" />
+          </div>
+          <div class="custom-content">
+            <h2>SweatPants</h2>
+            <p>Stussy x Nike spring Apparel</p>
+            <p style="color: #989696">Black</p>
+            <p style="color: #989696">$24</p>
+            <a href="#" onclick="document.getElementById('hi').style.display='block'">add to</a>
+          </div>
+        </div>
+
+        <!-- produk 4 -->
+        <div class="custom-card">
+          <div class="img-box">
+            <img style="width: 300px; height: auto" src="sepatu.jpeg" />
+          </div>
+          <div class="custom-content">
+            <h2>Sneakers</h2>
+            <p>Stussy x Nike Dunk Low Beige</p>
+            <p style="color: #989696">browns</p>
+            <p style="color: #989696">$268</p>
+            <a href="#" onclick="document.getElementById('yo').style.display='block'">add to</a>
+          </div>
+        </div>
+
+        <!-- produk 5 -->
+        <div class="custom-card">
+          <div class="img-box">
+            <img style="width: 300px; height: auto" src="sendal.jpeg" />
+          </div>
+          <div class="custom-content">
+            <h2>Slides</h2>
+            <p>Stussy x Nike Apparel</p>
+            <p style="color: #989696">Black</p>
+            <p style="color: #989696">$25</p>
+            <a href="#" onclick="document.getElementById('ho').style.display='block'">add to</a>
+          </div>
+        </div>
+
+        <!-- produk 6 -->
+        <div class="custom-card">
+          <div class="img-box">
+            <img style="width: 300px; height: auto" src="hoodie.jpeg" />
+          </div>
+          <div class="custom-content">
+            <h2>Hoodie</h2>
+            <p>Stussy Shirt Pigment Hoodie</p>
+            <p style="color: #989696">White</p>
+            <p style="color: #989696">$49</p>
+            <a href="#" onclick="document.getElementById('ye').style.display='block'">add to</a>
+          </div>
+        </div>
+
+        <!-- produk 7 -->
+        <div class="custom-card">
+          <div class="img-box">
+            <img style="width: 300px; height: auto" src="sweter.jpeg" />
+          </div>
+          <div class="custom-content">
+            <h2>Sweater</h2>
+            <p>Nike x Stussy Long Sleeve Knit Sweater</p>
+            <p style="color: #989696">White</p>
+            <p style="color: #989696">$45</p>
+            <a href="#" onclick="document.getElementById('he').style.display='block'">add to</a>
+          </div>
+        </div>
+
+        <!-- produk 8 -->
+        <div class="custom-card">
+          <div class="img-box">
+            <img style="width: 300px; height: auto" src="bomber.jpeg" />
+          </div>
+          <div class="custom-content">
+            <h2>Bomber Jacket</h2>
+            <p>Men's Stussy Souvenir Stadium Bomber Jacket</p>
+            <p style="color: #989696">Black</p>
+            <p style="color: #989696">$80</p>
+            <a href="#" onclick="document.getElementById('ga').style.display='block'">add to</a>
+          </div>
+        </div>
+
+        <!-- produk 9 -->
+        <div class="custom-card">
+          <div class="img-box">
+            <img style="width: 300px; height: auto" src="mountain.jpeg" />
+          </div>
+          <div class="custom-content">
+            <h2>Mountain Jacket</h2>
+            <p>Stussy Primaloft Mountain Jacket</p>
+            <p style="color: #989696">Black</p>
+            <p style="color: #989696">$93</p>
+            <a href="#" onclick="document.getElementById('sa').style.display='block'">add to</a>
+          </div>
+        </div>
+
+        <!-- produk 10 -->
+        <div class="custom-card">
+          <div class="img-box">
+            <img style="width: 350px; height: auto" src="sherpa.jpeg" />
+          </div>
+          <div class="custom-content">
+            <h2>Sherpa Jacket</h2>
+            <p>Stussy 8 Ball Sherpa Reversible Jacket in Natural</p>
+            <p style="color: #989696">Black and grey</p>
+            <p style="color: #989696">$72</p>
+            <a href="#" onclick="document.getElementById('fa').style.display='block'">add to</a>
+          </div>
+        </div>
+
+        <!-- produk 11 -->
+        <div class="custom-card">
+          <div class="img-box">
+            <img style="width: 300px; height: auto" src="toot bag.jpeg" />
+          </div>
+          <div class="custom-content">
+            <h2>Tote Bag</h2>
+            <p>Stussy Canvas Dog Tote Bag</p>
+            <p style="color: #989696">grey</p>
+            <p style="color: #989696">$9</p>
+            <a href="#" onclick="document.getElementById('ne').style.display='block'">add to</a>
+          </div>
+        </div>
+
+        <!-- produk 12 -->
+        <div class="custom-card">
+          <div class="img-box">
+            <img style="width: 300px; height: auto" src="topi.jpeg" />
+          </div>
+          <div class="custom-content">
+            <h2>Topi</h2>
+            <p>Stussy Men's Low Pro Capin</p>
+            <p style="color: #989696">Black</p>
+            <p style="color: #989696">$11</p>
+            <a href="#" onclick="document.getElementById('ma').style.display='block'">add to</a>
+          </div>
+        </div>
+      </div>
+
+            <footer class="footer">
+        <div class="contai">
+          <div class="roy">
+            <div class="footer-col">
+              <h4>company</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">affiliate program</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shopping</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>online shop</h4>
+              <ul>
+                <li><a href="#">T-shirt</a></li>
+                <li><a href="#">Toot-bag</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">Jacket</a></li>
+                <li><a href="#">Sendal</a></li>
+                <li><a href="#">Topi</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div id="id01" class="modal">
+        <form
+          class="modal-content animate"
+        >
+          <div class="conts">
+            <!-- card 1 -->
+            <div class="cart" id="ya" style="display: none">
+              <div class="item" data-price="50">
+                <img src="T-shirt.jpeg" alt="Sepatu" />
+                <div class="item-info">
+                  <span class="item-name">T-shirt</span>
+                  <span class="item-price">$19</span>
+                  <div class="quantity">
+                    <button class="decrement"><p>-</p></button>
+                    <span class="quantity-value">0</span>
+                    <button class="increment" href="#"><p>+</p></button>
+                    <button class="remove" onclick="document.getElementById('ya').style.display='none'">Hapus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="cart" id="ha" style="display: none">
+              <div class="item" data-price="50">
+                <img src="jaket.jpeg" alt="Sepatu" />
+                <div class="item-info">
+                  <span class="item-name">jaket</span>
+                  <span class="item-price">$40</span>
+                  <div class="quantity">
+                    <button class="decrement"><p>-</p></button>
+                    <span class="quantity-value">0</span>
+                    <button class="increment" href="#"><p>+</p></button>
+                    <button class="remove" onclick="document.getElementById('ha').style.display='none'">Hapus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 3-->
+            <div class="cart" id="hi" style="display: none">
+              <div class="item" data-price="50">
+                <img src="celana.jpeg" alt="Sepatu" />
+                <div class="item-info">
+                  <span class="item-name">SweatPants</span>
+                  <span class="item-price">$24</span>
+                  <div class="quantity">
+                    <button class="decrement"><p>-</p></button>
+                    <span class="quantity-value">0</span>
+                    <button class="increment" href="#"><p>+</p></button>
+                    <button class="remove" onclick="document.getElementById('hi').style.display='none'">Hapus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div class="cart" id="yo" style="display: none">
+              <div class="item" data-price="50">
+                <img src="sepatu.jpeg" alt="Sepatu" />
+                <div class="item-info">
+                  <span class="item-name">Sneakers</span>
+                  <span class="item-price">$268</span>
+                  <div class="quantity">
+                    <button class="decrement"><p>-</p></button>
+                    <span class="quantity-value">0</span>
+                    <button class="increment" href="#"><p>+</p></button>
+                    <button class="remove" onclick="document.getElementById('yo').style.display='none'">Hapus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 5-->
+            <div class="cart" id="ho" style="display: none">
+              <div class="item" data-price="50">
+                <img src="sendal.jpeg" alt="Sepatu" />
+                <div class="item-info">
+                  <span class="item-name">Slides</span>
+                  <span class="item-price">$25</span>
+                  <div class="quantity">
+                    <button class="decrement"><p>-</p></button>
+                    <span class="quantity-value">0</span>
+                    <button class="increment" href="#"><p>+</p></button>
+                    <button class="remove" onclick="document.getElementById('ho').style.display='none'">Hapus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 6 -->
+            <div class="cart" id="ye" style="display: none">
+              <div class="item" data-price="50">
+                <img src="hoodie.jpeg" alt="Sepatu" />
+                <div class="item-info">
+                  <span class="item-name">Hoodie</span>
+                  <span class="item-price">$49</span>
+                  <div class="quantity">
+                    <button class="decrement"><p>-</p></button>
+                    <span class="quantity-value">0</span>
+                    <button class="increment" href="#"><p>+</p></button>
+                    <button class="remove" onclick="document.getElementById('ye').style.display='none'">Hapus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 7 -->
+            <div class="cart" id="he" style="display: none">
+              <div class="item" data-price="50">
+                <img src="sweter.jpeg" alt="Sepatu" />
+                <div class="item-info">
+                  <span class="item-name">Sweater</span>
+                  <span class="item-price">$45</span>
+                  <div class="quantity">
+                    <button class="decrement"><p>-</p></button>
+                    <span class="quantity-value">0</span>
+                    <button class="increment" href="#"><p>+</p></button>
+                    <button class="remove" onclick="document.getElementById('he').style.display='none'">Hapus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 8 -->
+            <div class="cart" id="ga" style="display: none">
+              <div class="item" data-price="50">
+                <img src="bomber.jpeg" alt="Sepatu" />
+                <div class="item-info">
+                  <span class="item-name">Bomber Jacket</span>
+                  <span class="item-price">$80</span>
+                  <div class="quantity">
+                    <button class="decrement"><p>-</p></button>
+                    <span class="quantity-value">0</span>
+                    <button class="increment" href="#"><p>+</p></button>
+                    <button class="remove" onclick="document.getElementById('ga').style.display='none'">Hapus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 9 -->
+            <div class="cart" id="sa" style="display: none">
+              <div class="item" data-price="50">
+                <img src="mountain.jpeg" alt="Sepatu" />
+                <div class="item-info">
+                  <span class="item-name">Mountain Jacket</span>
+                  <span class="item-price">$93</span>
+                  <div class="quantity">
+                    <button class="decrement"><p>-</p></button>
+                    <span class="quantity-value">0</span>
+                    <button class="increment" href="#"><p>+</p></button>
+                    <button class="remove" onclick="document.getElementById('sa').style.display='none'">Hapus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 10 -->
+            <div class="cart" id="fa" style="display: none">
+              <div class="item" data-price="50">
+                <img src="sherpa.jpeg" alt="Sepatu" />
+                <div class="item-info">
+                  <span class="item-name">Sherpa Jacket</span>
+                  <span class="item-price">$72</span>
+                  <div class="quantity">
+                    <button class="decrement"><p>-</p></button>
+                    <span class="quantity-value">0</span>
+                    <button class="increment" href="#"><p>+</p></button>
+                    <button class="remove" onclick="document.getElementById('fa').style.display='none'">Hapus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 11 -->
+            <div class="cart" id="ne" style="display: none">
+              <div class="item" data-price="50">
+                <img src="toot bag.jpeg" alt="Sepatu" />
+                <div class="item-info">
+                  <span class="item-name">Tote Bag</span>
+                  <span class="item-price">$9</span>
+                  <div class="quantity">
+                    <button class="decrement"><p>-</p></button>
+                    <span class="quantity-value">0</span>
+                    <button class="increment" href="#"><p>+</p></button>
+                    <button class="remove" onclick="document.getElementById('ne').style.display='none'">Hapus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 12 -->
+            <div class="cart" id="ma" style="display: none">
+              <div class="item" data-price="50">
+                <img src="topi.jpeg" alt="Sepatu" />
+                <div class="item-info">
+                  <span class="item-name">Topi</span>
+                  <span class="item-price">$11</span>
+                  <div class="quantity">
+                    <button class="decrement"><p>-</p></button>
+                    <span class="quantity-value">0</span>
+                    <button class="increment" href="#"><p>+</p></button>
+                    <button class="remove" onclick="document.getElementById('ma').style.display='none'">Hapus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- total dan checkout-->
+            <div class="total">
+              <span>Total:</span>
+              <span id="total-price">$0</span>
+            </div>
+            <button id="checkout-btn" ><a href="payment.html" style="text-decoration: none;color: white;">Checkout</a></button>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      const body = document.querySelector("body"),
+        sidebar = body.querySelector("nav"),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+      toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+      searchBtn.addEventListener("click", () => {
+        sidebar.classList.remove("close");
+      });
+      modeSwitch.addEventListener("click", () => {
+        body.classList.toggle("dark");
+        if (body.classList.contains("dark")) {
+          modeText.innerText = "Light mode";
+        } else {
+          modeText.innerText = "Dark mode";
+        }
+      });
+
+      // Get the modal
+      var modal = document.getElementById("id01");
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const decrementButtons = document.querySelectorAll(".decrement");
+        const incrementButtons = document.querySelectorAll(".increment");
+        const removeButtons = document.querySelectorAll(".remove");
+        const quantityValues = document.querySelectorAll(".quantity-value");
+        const itemPrices = document.querySelectorAll(".item-price");
+        const totalPriceSpan = document.getElementById("total-price");
+        const clearCartButton = document.getElementById("clear-cart");
+        const resetPriceButton = document.getElementById('reset-price');
+
+        // Fungsi untuk mengupdate total harga
+        function updateTotalPrice() {
+          let totalPrice = 0;
+          itemPrices.forEach((itemPrice, index) => {
+            const price = parseFloat(itemPrice.textContent.slice('1'));
+            const quantity = parseInt(quantityValues[index].textContent);
+            totalPrice += price * quantity;
+          });
+          totalPriceSpan.textContent = `$${totalPrice.toFixed(0)}`;
+        }
+
+        // Event listener untuk tombol "Kurangi"
+        decrementButtons.forEach((button, index) => {
+          button.addEventListener("click", function () {
+            let currentValue = parseInt(quantityValues[index].textContent);
+            if (currentValue > 1) {
+              quantityValues[index].textContent = currentValue - 1;
+              updateTotalPrice();
+            }
+          });
+        });
+
+        // Event listener untuk tombol "Tambah"
+        incrementButtons.forEach((button, index) => {
+          button.addEventListener("click", function () {
+            let currentValue = parseInt(quantityValues[index].textContent);
+            quantityValues[index].textContent = currentValue + 1;
+            updateTotalPrice();
+          });
+        });
+
+        // Event listener untuk tombol "Hapus"
+  removeButtons.forEach((button, index) => {
+    button.addEventListener('click', function() {
+      const itemPrice = parseFloat(itemPrices[index].textContent.slice(1));
+      const quantity = parseInt(quantityValues[index].textContent);
+      const totalPrice = itemPrice * quantity;
+      totalPriceSpan.textContent = `$${(parseFloat(totalPriceSpan.textContent.slice(1)) - totalPrice).toFixed(0)}`;
+    });
+  });
+        
+        // Memanggil fungsi updateTotalPrice saat halaman dimuat
+        updateTotalPrice('conts');
+      });
+    </script>
+  </body>
+</html>
